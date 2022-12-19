@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class UsandoMetodos {
+public class MetodosParametros {
 
 	public static void main(String[] args) {
 		
@@ -23,7 +23,6 @@ public class UsandoMetodos {
 		Boolean posicaoValida = posicaoCursoEscolhido >= 0 && posicaoCursoEscolhido < cursos.length;
 		
 		if (!posicaoValida) {
-			Erro();
 			SairSistema();
 		}
 		
@@ -43,7 +42,6 @@ public class UsandoMetodos {
 			posicaoValida = posicaoPagamento >= 0 && posicaoPagamento < formasPagamento.length;
 			
 			if (!posicaoValida) {
-				Erro();
 				SairSistema();
 			}
 			
@@ -62,11 +60,9 @@ public class UsandoMetodos {
 		   System.out.println("----------------------------------");
 	   }
 	   
-	   static void Erro() {
-		   System.out.println("Posição inválida");
-	   }
 	   
 	   static void SairSistema() {
+		   System.out.println("Escolha Invalida");
 		   System.exit(1);
 	   }
 
