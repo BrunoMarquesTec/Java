@@ -12,10 +12,8 @@ public class MetodosParametros {
 		
 		System.out.println("Escolha dentre os cursos abaixo :");
 		
-		for (int i = 0; i < cursos.length; i++) {
-			
-			System.out.println("[" + i + "]" + cursos[i]);
-		}
+		
+		IterarEExibir(cursos);
 		
 		System.out.print("Qual curso voce escolheu? ");
 		Integer posicaoCursoEscolhido = scanner.nextInt();
@@ -32,9 +30,7 @@ public class MetodosParametros {
 		
 		System.out.println("Escolha a forma de pagamento: ");
 		
-		for (int i = 0; i < formasPagamento.length; i++) {
-			System.out.println("[" + i + "]" + formasPagamento[i]);
-		}
+		IterarEExibir(formasPagamento);
 		
 			System.out.print("Digite a forma escolhida: ");
 			Integer posicaoPagamento = scanner.nextInt();
@@ -56,6 +52,17 @@ public class MetodosParametros {
 
 	}
 	
+	
+	   
+	
+	
+	  static void IterarEExibir(String[] vetor) {
+		  for (int i = 0; i < vetor.length; i++) {
+				
+				System.out.println("[" + i + "]" + vetor[i]);
+		  }
+	  }
+	
 	   static void ImprimirTraco() {
 		   System.out.println("----------------------------------");
 	   }
@@ -65,5 +72,6 @@ public class MetodosParametros {
 		   System.out.println("Escolha Invalida");
 		   System.exit(1);
 	   }
+	   
 
 }
